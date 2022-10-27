@@ -1,11 +1,15 @@
 import React from "react";
 
-function ListingCard() {
+function ListingCard({ item }) {
+
+  console.log(item)
+
+
   return (
     <li className="card">
       <div className="image">
         <span className="price">$0</span>
-        <img src={"https://via.placeholder.com/300x300"} alt={"description"} />
+        <img src={item.image} alt={item.description} />
       </div>
       <div className="details">
         {true ? (
